@@ -17,4 +17,8 @@
    <img src="https://i.imgur.com/ufUalvr.png" alt="Pixel 7 screen" style="width: 25%;">
 
 
-##
+## Referência
+
+ - [DiO - Bootcamp: Desenvolvimento Frontend com Angular ](https://www.dio.me/bootcamp/coding-future-banco-pan-desenvolvimento-frontend-com-angular)
+ - [RenanJPaula](https://github.com/digitalinnovationone/js-developer-pokedex/tree/projeto-base)
+
