@@ -1,7 +1,7 @@
 
 <h1 align="center"> Pokedex Project </h1>
-<p> * Practical project created during the DIO Bootcamp using HTML, CSS, JavaScript and PokeApi.</p>
-<p> * Layout inspired by an almanac</p>
+<p> - Practical project developed simultaneously while watching DiO Bootcamp classes with HTML, CSS, JavaScript and PokeApi.</p>
+<p> - Layout inspired by an almanac.</p>
 
 ## 
 <h2>Screenshots</h2>
