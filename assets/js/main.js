@@ -1,12 +1,16 @@
+
+// Wait for the DOM content to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+    // Get the Pokemon list and load more button elements by their IDs
     const pokemonList = document.getElementById('pokemonList');
     const loadMoreButton = document.getElementById('loadMoreButton');
 
+    // Define constants for maximum records, limit, and initial offset
     const maxRecords = 151;
     const limit = 10;
     let offset = 0;
 
-    // Função para converter um Pokémon em um elemento de lista HTML
+    // Function to convert a Pokemon to an HTML list element
     function convertPokemonToLi(pokemon) {
         return `
             <li class="pokemon ${pokemon.type} pokemon-card" data-number="${pokemon.number}">
@@ -24,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    // Função para carregar os itens da lista de Pokémon
+    // Function to load Pokemon items into the list
     function loadPokemonItems(offset, limit) {
         pokeApi.getPokemons(offset, limit)
             .then((pokemons = []) => {
@@ -33,25 +37,28 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Carrega os primeiros Pokémon ao carregar a página
+    // Load the initial Pokemon items when the page loads
     loadPokemonItems(offset, limit);
 
-    // Adiciona um evento de clique ao botão "Load More"
+    // Add a click event listener to the "Load More" button
     loadMoreButton.addEventListener('click', () => {
+        // Increment the offset and calculate the new limit
         offset += limit;
         const qtdRecordsWithNextPage = offset + limit;
 
+        // Check if the new limit exceeds the maximum records
         if (qtdRecordsWithNextPage >= maxRecords) {
             const newLimit = maxRecords - offset;
             loadPokemonItems(offset, newLimit);
 
+            // Remove the "Load More" button if the maximum records are reached
             loadMoreButton.parentElement.removeChild(loadMoreButton);
         } else {
             loadPokemonItems(offset, limit);
         }
     });
 
-    // Adiciona um evento de clique aos cards para navegar para a página de detalhes
+    // Add a click event listener to the Pokemon cards to navigate to the details page
     pokemonList.addEventListener('click', (event) => {
         const clickedCard = event.target.closest('.pokemon-card');
         if (clickedCard) {
@@ -60,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Função para navegar para a página de detalhes do Pokémon
+    // Function to navigate to the Pokemon details page
     function navigateToPokemonPage(pokemonNumber) {
         const url = `pokemon-details.html?number=${pokemonNumber}`;
         window.location.href = url;
