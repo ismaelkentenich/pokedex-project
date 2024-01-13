@@ -6,19 +6,22 @@
 ## 
 <h2>Screenshots</h2>
 
-  <p>Using a computer screen: </p>
-  <img src="https://i.imgur.com/G5TTWUg.png" alt="Notebook screen" style="width: 60%;">
+  <h4 align="center"> - DESKTOP - </h4>
+        <p align="center">
+            <img src="/assets/images/1.png" alt="Home page on Desktop" style="width: 20%;">
+            <img src="/assets/images/2.png" alt="Pokemon Details on Desktop" style="width: 20%;">
+        </p>
+		
+
+	<h4 align="center"> - iPhone SE - </h4>
+        <p align="center">
+            <img src="/assets/images/3.png" alt="Home page on iPhone" style="width: 20%;">
+            <img src="/assets/images/4.png" alt="Pokemon Details on iPhone" style="width: 20%;">
+        </p>
 
 
-   <p>Using iPhone SE:</p>
- <img src="https://i.imgur.com/HNlOYlE.png" alt="Iphone SE screen" style="width: 30%;">
- 
-<p>Using Pixel 7:</p>
-   <img src="https://i.imgur.com/ufUalvr.png" alt="Pixel 7 screen" style="width: 25%;">
-
-
-## Referência
+## References
 
  - [DiO - Bootcamp: Desenvolvimento Frontend com Angular ](https://www.dio.me/bootcamp/coding-future-banco-pan-desenvolvimento-frontend-com-angular)
  - [RenanJPaula](https://github.com/digitalinnovationone/js-developer-pokedex/tree/projeto-base)
-
+ - [PokeApi](https://pokeapi.co/)
