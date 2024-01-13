@@ -1,19 +1,18 @@
 
 <h1 align="center"> Pokedex Project </h1>
 <p> - Practical project developed simultaneously while watching DiO Bootcamp classes with HTML, CSS, JavaScript and PokeApi.</p>
-<p> - Layout inspired by an almanac.</p>
+<p> - Improvements on layout inspired by an almanac.</p>
 
-## 
 <h2>Screenshots</h2>
 
   <h4 align="center"> - DESKTOP - </h4>
         <p align="center">
-            <img src="/assets/images/1.png" alt="Home page on Desktop" style="width: 20%;">
-            <img src="/assets/images/2.png" alt="Pokemon Details on Desktop" style="width: 20%;">
+            <img src="/assets/images/2.png" alt="Home page on Desktop" style="width: 45%;">
+            <img src="/assets/images/1.png" alt="Pokemon Details on Desktop" style="width: 45%;">
         </p>
 		
 
-	<h4 align="center"> - iPhone SE - </h4>
+<h4 align="center"> - iPhone SE - </h4>
         <p align="center">
             <img src="/assets/images/3.png" alt="Home page on iPhone" style="width: 20%;">
             <img src="/assets/images/4.png" alt="Pokemon Details on iPhone" style="width: 20%;">
